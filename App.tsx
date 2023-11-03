@@ -1,10 +1,16 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import Header from './src/components/Header';
+import Market from './src/components/Market';
+import Card from './src/components/Card';
+
 
 function App(): JSX.Element {
   return (
     <View style={styles.container}>
-      <Text style={styles.L1}>Linka</Text>
+      <Header/>
+      <Market/>
+      <Card/>
     </View>
   );
 };
@@ -12,8 +18,10 @@ function App(): JSX.Element {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    marginTop: 20,
+    marginBottom: 4,
+    marginRight: 10,
+    marginLeft: 10,
   },
   L1: {
     fontSize: 24,
